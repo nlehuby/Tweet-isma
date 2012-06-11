@@ -1,0 +1,17 @@
+*** Traduction personnelle de la licence BSD ***
+
+Copyright (c) 2012, Noémie Lehuby <noemie.lehuby@gmail.com>
+Tous droits réservés.
+
+
+La redistribution et l'usage sous forme de code source ou sous forme binaire, avec ou sans modification, sont permis étant entendu que les conditions suivantes soient réunies :
+
+- Les redistributions de code source doivent maintenir la notification de copyright ci-dessus, cette liste de conditions et le déni suivant.
+
+- Les redistributions sous forme binaire doivent reproduire la notification de copyright ci-dessus, cette liste de conditions et le déni suivant dans la documentation et/ou d'autres supports accompagnant la distribution. 
+
+- Le nom de l'auteur ne peut être employé pour assumer ou promouvoir des produits dérivés de ce logiciel sans permission écrite préalable. 
+
+CE LOGICIEL EST FOURNI PAR L'AUTEUR "TEL QUEL" ET TOUTES GARANTIES EXPRESSES OU IMPLICITES, INCLUANT, MAIS PAS À LIMITER À CELLES-CI, LES GARANTIES IMPLICITES DE VALEUR MARCHANDE ET D'ADAPTATION À UN BUT PARTICULIER SONT DÉNIÉES.
+DANS AUCUN CAS L'AUTEUR NE POURRA ÊTRE TENU RESPONSABLE DES DOMMAGES DIRECTS, INDIRECTS, FORTUITS, SPÉCIAUX, EXEMPLAIRES, OU CONSÉCUTIFS (COMPRENANT, MAIS NON LIMITÉ À CECI, LE REMPLACEMENT DE BIENS OU DE SERVICES; LA PERTE DE L'USAGE, DE DONNÉES, OU DE BÉNÉFICES; OU L'INTERRUPTION DE TRAVAIL) CAUSÉS DE QUELQUE FAÇON ET SELON TOUTE THÉORIE DE RESPONSABILITÉ, DE MANIÈRE CONTRACTUELLE, LA RESPONSABILITÉ SANS FAUTE INTENTIONNELLE, OU LE TORT (NÉGLIGENCE OU AUTRE) CONSÉCUTIF À TOUTE SORTE D'UTILISATION DE CE LOGICIEL,
+MÊME APRÈS AVOIR ÉTÉ AVISÉ DE LA POSSIBILITÉ D'UN TEL DOMMAGE. 
