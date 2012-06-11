@@ -40,7 +40,7 @@ public class Tweet_ismaActivity extends ListActivity {
 			StatusLine statusLine = response.getStatusLine();
 			int statusCode = statusLine.getStatusCode();
 			if (statusCode == 200) {
-				Log.v("Tweet-isma app", "J'ai réussi à lire ton fichier json :)");
+				Log.i("Tweet-isma app", "Overture du fichier json réussie :)");
 				HttpEntity entity = response.getEntity();
 				InputStream content = entity.getContent();
 				BufferedReader reader = new BufferedReader(new InputStreamReader(content));
@@ -50,16 +50,16 @@ public class Tweet_ismaActivity extends ListActivity {
 				}
 				
 			} else {
-				Log.v("Tweet-isma app", "Échec à la lecture du fichier !");
+				Log.e("Tweet-isma app", "Échec à l'ouverture du fichier !");
 			}
 		
 			
 		} catch (ClientProtocolException e)
 		{ 	e.printStackTrace();
-			Log.v("Tweet-isma app", "Client Protocol Exception"+ e.getMessage()); 		}
+			Log.e("Tweet-isma app", "Client Protocol Exception"+ e.getMessage()); 		}
 		catch (IOException e) 		
 		{ 	e.printStackTrace();
-		Log.v("Tweet-isma app", "Client Protocol Exception"+ e.getMessage()); 		}
+		Log.e("Tweet-isma app", "Client Protocol Exception"+ e.getMessage()); 		}
 		
 		return builder.toString(); 
 		
@@ -69,22 +69,23 @@ public class Tweet_ismaActivity extends ListActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.v("Tweet-isma app","Création de l'application");
+        Log.i("Tweet-isma app","Création de l'application réussie");
         
         String readTF = readTwitterFeed();
         try {
         	Log.v("Tweet-isma app", "... lecture du flux json en cours ...");
         	JSONArray jsonArray = new JSONArray(readTF);
         	final ArrayList<HashMap<String,String>> listItem = new ArrayList<HashMap<String,String>>();
-        	Log.v("Tweet-isma app","Nombre de tweets : "+ jsonArray.length()+ ". Voici la liste :");
+        	Log.d("Tweet-isma app","Nombre de tweets : "+ jsonArray.length()+ ". Voici la liste :");
         	for (int i=0 ; i< jsonArray.length(); i++)
         	{
         		JSONObject jsonObject = jsonArray.getJSONObject(i);
-        		Log.v("Tweet-isma app", jsonObject.getString("text"));
+        		Log.d("Tweet-isma app", jsonObject.getString("text"));
                 HashMap<String, String> map = new HashMap<String,String>();     
                 map.put("tweet", jsonObject.getString("text"));
                 map.put("image", String.valueOf(R.drawable.isma));
                 listItem.add(map);
+                Log.v("Tweet-isma app","Affichage du tweet réussi");
                 
                 ListView maliste = getListView();
                 maliste.setOnItemClickListener(new OnItemClickListener() {
