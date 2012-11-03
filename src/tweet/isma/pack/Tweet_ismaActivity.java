@@ -33,7 +33,8 @@ public class Tweet_ismaActivity extends ListActivity {
 	public String readTwitterFeed(){
 		StringBuilder builder = new StringBuilder();
 		HttpClient client = new DefaultHttpClient();
-		HttpGet httpGet = new HttpGet("http://twitter.com/statuses/user_timeline/ismaeil_.json");
+		// More details on the json feed url format on https://dev.twitter.com/docs/api/1/get/statuses/user_timeline
+		HttpGet httpGet = new HttpGet("http://api.twitter.com/1/statuses/user_timeline/ismaeil_.json");
 		
 		try {
 			HttpResponse response = client.execute(httpGet);
